@@ -5,23 +5,78 @@
   padding: 0.5rem;
   font-size: 2rem;
   background-color: #444;
+  margin: 0 50px 0 50px;
 }
 .list {
   color: #ffe;
   padding: 0.5rem;
-  background-color: #444;
   margin: 3px;
-}
-li {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  gap: 24px 10px;
+}
+.item {
+  background-color: #444;
+  display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 1.2rem;
   color: #fff;
   padding: 0.2rem;
+  height: 60px;
+}
+#style {
+  background-color: #aaa;
+  width: 35%;
+  flex-grow: 1;
+}
+#songs {
+  width: 35%;
+  background-color: #aaa;
+  flex-grow: 1;
+}
+#gear {
+  width: 35%;
+  background-color: #aaa;
+  flex-grow: 1;
+}
+.teacher {
+  display: grid;
+  grid-template-areas: "photo text";
+  grid-template-columns: 1fr 2fr;
+  max-width: 70%;
+  margin: 0;
+}
+#pic {
+  grid-area: photo;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid black;
+  margin: 0 0 0 0;
+}
+span {
+  font-weight: bold;
+}
+#interduce {
+  grid-area: text;
+  margin: 0 0 0 0;
+  max-width: 500px;
+  word-wrap: break-word;
 }
 p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 15px;
+}
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:hover {
+  color: #a33;
+  font-weight: bold;
+  text-decoration: underline a33;
 }
